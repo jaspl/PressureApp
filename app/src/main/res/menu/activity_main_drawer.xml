@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mail"
+            android:icon="@drawable/ic_email"
+            android:title="@string/send_exclel_data" />
+        <item
+            android:id="@+id/all_pressure_measurement"
+            android:icon="@drawable/ic_calendar"
+            android:title="@string/all_pressure_measurement_score" />
+        <item
+            android:id="@+id/last_pressure_measurement"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/last_pressure_measurement_score" />
+        <item
+            android:id="@+id/all_weight_measurement"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/all_weight_measurement_score" />
+        <item
+            android:id="@+id/last_weight_measurement"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/last_weight_measurement_score" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

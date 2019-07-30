@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">BloodPressureApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="delete_data">Usuń dane o cisnieniu(nie naciskaj)</string>
+    <string name="weight_data">dodaj dane do wagi</string>
+    <string name="pressure_data">usun dane o wadze</string>
+
+    <string name="send_exclel_data">Wyślij Excel z wynikami</string>
+    <string name="all_pressure_measurement_score">Wszystkie wyniki ciśnienia</string>
+    <string name="last_pressure_measurement_score">Ostatnie wyniki ciśnienia</string>
+    <string name="all_weight_measurement_score">Wszystkie wyniki wagi</string>
+    <string name="last_weight_measurement_score">Ostatnie wyniki wagi</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_add_pressure_measurement">AddPressureMeasurement</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_last_mesurements">LastMesurements</string>
+    <string name="title_activity_last_weight_measurement">LastWeightMeasurement</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+</resources>

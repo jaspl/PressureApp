@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="lowerSystolicPressure">120</integer>
+    <integer name="lowerDiastolicPressure">80</integer>
+    <integer name="higherSystolicPressure">129</integer>
+    <integer name="higherDiastolicPressure">84</integer>
+</resources>

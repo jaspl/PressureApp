@@ -64,7 +64,7 @@ public class LastPressureMesurement extends Base {
     }
 
 
-    public void permission() {
+    public void permission() { 
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,
                         Manifest.permission.READ_EXTERNAL_STORAGE},1);

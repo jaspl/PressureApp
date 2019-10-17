@@ -87,13 +87,6 @@ public class DbController extends DbHelper {
         return putValuesToList(res);
     }
 
-
-    public List getPressure30Data() {
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("SELECT * FROM " + pressure_table_name + ";", null);
-        return putValuesToList(res);
-    }
-
     public List getWeightWhenData(String date) {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("SELECT * FROM " + weigh_table_name + " WHERE " + weigh_date_col + " LIKE '" + date + "';", null);
@@ -106,12 +99,6 @@ public class DbController extends DbHelper {
         return putValuesToList(res);
     }
 
-
-    public List getWeight30Data() {
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor res = db.rawQuery("SELECT * FROM " + weigh_date_col + ";", null);
-        return putValuesToList(res);
-    }
 
     public void getDeletePressure() {
         db.execSQL("delete from " + pressure_table_name);
@@ -144,7 +131,7 @@ public class DbController extends DbHelper {
         }
     }
 
-    private int checklength(List list) {
+    private int checkLength(List list) {
         if (list.size() - 1 > 10) return list.size() - 11;
         else return 0;
 
@@ -154,14 +141,12 @@ public class DbController extends DbHelper {
     public String getDate() {
         SimpleDateFormat dateformat = new SimpleDateFormat("d-M-yyyy");
         String date = dateformat.format(c.getTime());
-        // Log.d("Data",date);
         return date;
     }
 
     public String getTime() {
         SimpleDateFormat timeformat = new SimpleDateFormat("HH:mm");
         String time = timeformat.format(c.getTime());
-        //Log.d("czas",time);
         return time;
     }
 }

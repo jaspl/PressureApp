@@ -29,8 +29,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class LastWeightMeasurement extends Base
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class LastWeightMeasurement extends Base {
     DbController dbController;
      EditText weight;
     @Override
@@ -38,15 +37,6 @@ public class LastWeightMeasurement extends Base
         super.onCreate(savedInstanceState);
         dbController = new DbController(this);
         setContentView(R.layout.activity_last_weight_measurement);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-        navigationView.setNavigationItemSelectedListener(this);
         CheckIfAllDataFromTableApears(dbController.getAllWeight());
         Button addWeightActivityButton = findViewById(R.id.newWeightActivityButton);
         weight= findViewById(R.id.weight);
@@ -63,6 +53,7 @@ public class LastWeightMeasurement extends Base
                 CheckIfAllDataFromTableApears(dbController.getAllWeight());
             }
         });
+        this.navView(this,this);
 
     }
 
@@ -98,30 +89,6 @@ public class LastWeightMeasurement extends Base
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.mail) {
-            // Handle the camera action
-        } else if (id == R.id.mail) {
-
-        } else if (id == R.id.mail) {
-
-        } else if (id == R.id.mail) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }
-
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }
 
     public void CheckIfAllDataFromTableApears(List dbList) {
         TextView date = findViewById(R.id.dateWeightTable);
